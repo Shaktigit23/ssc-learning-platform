@@ -1,0 +1,21 @@
+{
+  "math": [
+    {
+      "question": "12 x 8 = ?",
+      "options": ["96","72","88","108"],
+      "answer": "96"
+    },
+    {
+      "question": "50 ÷ 5 = ?",
+      "options": ["5","10","15","20"],
+      "answer": "10"
+    }
+  ],
+  "science": [
+    {
+      "question": "Plants prepare food by?",
+      "options": ["Photosynthesis","Respiration","Digestion","Absorption"],
+      "answer": "Photosynthesis"
+    }
+  ]
+}
