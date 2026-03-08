@@ -180,3 +180,33 @@ document.getElementById("score").innerHTML =
 "🎓 Your Score: " + score + " / " + currentQuestions.length;
 
 }
+
+function login(){
+
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
+
+fetch("users.json")
+.then(res => res.json())
+.then(data => {
+
+let user = data.users.find(
+u => u.username === username && u.password === password
+);
+
+if(user){
+
+localStorage.setItem("student",username);
+
+window.location.href = "dashboard.html";
+
+}else{
+
+document.getElementById("loginMessage").innerHTML =
+"Invalid username or password";
+
+}
+
+});
+
+}
